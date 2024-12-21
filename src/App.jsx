@@ -181,7 +181,7 @@ const App = () => {
 {/* El footer de la pagina web */}
         <footer>
           <div className="contenido-footer">
-            <p>@ 2024 GameShop, Inc.</p>
+            <p>&copy; 2024 GameShop, Inc.</p>
             <nav>
               <ul>
                 {/* Los enlaces que estaran en el footer, algunos distintos a los que estan en el header */}
