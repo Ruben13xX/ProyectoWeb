@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  height: 100%;
+  color: #333;
+}
+
+.contenedor-app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.TituloWeb {
+  background-color: #f9f9f9;
+  text-align: center;
+  color: #f44336;
+  margin-top: 10px;
+  font-size: 50px;
+}
+
+header {
+  background-color: #f44336;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .WebNombre h1 {
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+section.seccion {
+  padding: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #f9f9f9;
+  flex-grow: 1;
+}
+
+section.seccion h2 {
+  font-size: 36px;
+  color: #f44336;
+  margin-bottom: 20px;
+}
+
+section.section p {
+  font-size: 18px;
+  color: #555;
+}
+
+.formulario-contacto {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.formulario-contacto h2 {
+  color: #f44336;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.formulario-contacto label {
+  font-size: 16px;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.formulario-contacto input, .formulario-contacto textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.formulario-contacto input:focus, .formulario-contacto textarea:focus {
+  border-color: #f44336;
+  outline: none;
+}
+
+.formulario-contacto button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.formulario-contacto button:hover {
+  background-color: #d32f2f;
+}
+
+footer {
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+footer .contenido-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+footer .contenido-footer h1 {
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+footer nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin: 0;
+}
+
+footer nav ul li {
+  margin-right: 20px;
+}
+
+footer nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+  color: #ffcc00;
+}
+
+.seccion-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+
+.seccion-contenido .texto {
+  max-width: 1000px;
+  margin: 0 auto;  
+  text-align: justify; 
+  padding: 10px; 
+}
+
+.seccion-contenido .texto h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #f44336;
+}
+
+.seccion-contenido .texto p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.seccion-contenido img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  margin: 20px;
+}
+
+.seccion-beneficios {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.beneficio {
+  flex: 1;
+  margin: 10px 15px;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.beneficio h3 {
+  font-size: 18px;
+  color: #f44336;
+  margin-bottom: 10px;
+}
+
+.beneficio p {
+  font-size: 14px;
+  color: #333;
+}
+
+.articulos-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.articulo-casilla {
+  width: 18%;
+  margin: 10px;
+  border: 3px solid #ff7043;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
+.articulo-casilla img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.articulo-casilla h3 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.articulo-casilla p {
+  font-size: 16px;
+  color: #ff7043;
+  margin: 5px 0;
+}
+
+.articulos-contenedor > .articulo-casilla {
+  box-sizing: border-box;
+}
+
+.PreguntasFrec {
+  margin-bottom: 20px;
+}
+
+.PreguntasFrec h3 {
+  font-size: 20px;
+  color: #f44336;
+}
+
+.PreguntasFrec p {
+  font-size: 16px;
+  color: #555;
+}
+
+.img-acercade {
+  height: 35%;
+  max-width: 30%;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
